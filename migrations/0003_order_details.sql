@@ -1,0 +1,11 @@
+alter table orders add column if not exists fulfillment text not null default 'pickup';
+alter table orders add column if not exists address text not null default '';
+alter table orders add column if not exists comment text not null default '';
+alter table orders add column if not exists occasion text not null default 'none';
+alter table orders add column if not exists allergies text not null default 'none';
+alter table orders add column if not exists allergy_note text not null default '';
+alter table orders add column if not exists diet text not null default 'regular';
+alter table orders add column if not exists kids_cake boolean not null default false;
+alter table orders add column if not exists kids_age text not null default '';
+alter table orders add column if not exists color_note text not null default '';
+alter table orders add column if not exists weight text not null default '';
